@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .phone {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        .slide {
+            position: absolute;
+            bottom: 180px;
+            left: 100px;
+        }
+        .fa-facebook {
+            background: white;
+            color: rgb(108, 108, 248);
+            margin-right: 7px;
+            margin-left: 20px;
+            padding: 4px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        ::placeholder {
+            background: whitesmoke;
+            color: thistle;
+            height: 35px;
+        }
+        input {
+            border-radius: 4px;
+            height: 30px;
+            width: 300px;
+            color: whitesmoke;
+            margin-left: 12px;
+        }
+        button {
+            display: inline-block;
+            border-radius: 8px;
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:100%;height:100%;background:whitesmoke;display: flex;justify-content:flex-start">
+        <div style="width:30%;height:100%;margin-left:380px;margin-top:80px;position: relative;left: 0px;top: 0px;">
+            <img class="phone" src="phone.png" 
+            />
+            <img class="slide" src="instagram.png"
+                style="max-width:190px;max-height:380px;" />
+            <img class="slide" src="insta1.png"
+                style="max-width:190px;max-height:380px;" />
+            <img class="slide" src="insta2.png"
+                style="max-width:190px;max-height:380px;" />
+            <img class="slide" src="insta3.png"
+                style="max-width:190px;max-height:380px;" />
+            <img class="slide" src="insta4.png"
+                style="max-width:190px;max-height:380px;" />
+
+            <script>
+                var count = 0;
+                auto();
+                function auto() {
+                    var i;
+                    var slides = document.getElementsByClassName("slide");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    count++;
+                    if (count > slides.length) {
+                        count = 1;
+                    }
+                    slides[count - 1].style.display = "block";
+                    setTimeout(auto, 3000);
+                }
+            </script>
+        </div>
+        <div style="width:25%;height:100%;margin-top:40px;background:whitesmoke;">
+            <div style="width:100%;height:80%;background:white;border:1px solid black;">
+                <h1
+                    style="font-size:35px;color:black;font-family:cursive;text-align: center;width:80%;padding-left:35px;">
+                    Instagram
+                </h1>
+                <p style="font-size:20px;color:grey;text-align: center;width:80%;padding-left:35px;">
+                    Sign up to see photos and videos from your friends.</p>
+                <button
+                    style="background:rgb(108, 108, 247);color:white;width:70%;height:6%;margin-left:45px;margin-top:1px;">
+                    <a href="https://www.facebook.com/"
+                        class="fa fa-facebook" style="width: 4%;height: 40%;"></a><a
+                        href="https://m.facebook.com/login.php?skip_api_login=1&amp;api_key=124024574287414&amp;kid_directed_site=0&amp;app_id=124024574287414&amp;signed_next=1&amp;next=https%3A%2F%2Fm.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522pm650qlakyvovyejyfi5585ltoge4jthr8mn16owc0weazgs0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26ret%3Dlogin%26fbapp_pres%3D0%26fallback_redirect_uri%3Dea6634b7-4260-42e9-9a1e-0ae6f9bccf3b%26logger_id%3Dea6634b7-4260-42e9-9a1e-0ae6f9bccf3b&amp;cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522pm650qlakyvovyejyfi5585ltoge4jthr8mn16owc0weazgs0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&amp;display=touch&amp;locale=en_GB&amp;refsrc=http%3A%2F%2Fwww.instagram.com%2F&amp;_rdr">
+                        Log in with Facebook</a>
+                </button>
+                <h1 style="color:grey;font-size:10px;padding-top:7px;text-align:center;width:80%;padding-left:25px;">
+                    ----------------------------------- OR -----------------------------------
+                </h1>
+                <div style="width:80%;margin-top:15px;margin:5px;">
+                    <input type="" placeholder="Email or Mobile number" required="">
+                </div>
+                <div style="width:80%;margin:5px;">
+                    <input type="text" placeholder="Full Name" required="">
+                </div>
+                <div style="width:80%;margin:5px;">
+                    <input type="text" placeholder="Username" required=""></div>
+                <div style="width:80%;margin:5px;">
+                    <input type="" placeholder="Password" required=""> </div>
+                <div style="width:80%;margin:5px;margin-left: 12px;">
+                    <button type="submit"
+                        style="width:100%;color:white;background:rgb(0, 162, 255);margin:5px;margin-left:20px; "> Sign
+                        Up </button>
+                </div>
+                <p
+                    style="font-size:12px;color:grey;text-align: center;width:80%;padding-left:35px;padding-bottom:10px; ">
+                    By signing up, you agree to our <a href="https://help.instagram.com/581066165581870">Terms</a> ,
+                    <a href="https://help.instagram.com/519522125107875"> Data Policy</a> and <a
+                        href="https://help.instagram.com/1896641480634370?ref=ig"> Cookies Policy.</a></p>
+            </div>
+            <div style="width:100%;height:8%;background:white;color:black;border:1px solid black;margin-top:5px; ">
+                <h1 style="font-size:15px;padding-left:65px;padding-top:5px;color:grey;padding-bottom:35px; ">
+                    Have have an account?<a href="https://www.instagram.com/accounts/login/?source=auth_switcher"> Log
+                        In</a>
+                </h1>
+            </div>
+            <div style="width:100%;height:7%;display:flex;justify-content: space-around;">
+                
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
